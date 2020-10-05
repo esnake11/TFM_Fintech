@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaMercadoController">
+   <children>
+      <TableView fx:id="tblCompra" layoutY="65.0" prefHeight="635.0" prefWidth="647.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="658.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="colCompraProd" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="PRODUCTO" />
+          <TableColumn fx:id="colCompraTime" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="TIMESTAMP" />
+            <TableColumn fx:id="colCompraAcciones" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="ACCIONES" />
+            <TableColumn fx:id="colCompraPrecio" prefWidth="292.0" resizable="false" sortType="DESCENDING" style="-fx-alignment: CENTER;" text="PRECIO" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblVenta" layoutX="664.0" layoutY="65.0" prefHeight="635.0" prefWidth="637.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="664.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="colVentaPrecio" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="PRECIO" />
+          <TableColumn fx:id="colVentaAcciones" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="ACCIONES" />
+            <TableColumn fx:id="colVentaTime" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="TIMESTAMP" />
+            <TableColumn fx:id="colVentaProd" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="PRODUCTO" />
+        </columns>
+      </TableView>
+      <Label layoutX="233.0" layoutY="17.0" style="-fx-font-weight: bold;" text="Compra (Bid)">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="922.0" layoutY="17.0" style="-fx-font-weight: bold;" text="Venta (Ask)">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNuevoLogin" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#nuevoLogin" text="Nuevo login" />
+      <Button fx:id="bntHistorial" layoutX="458.0" layoutY="16.0" mnemonicParsing="false" onAction="#consultarHistorial" text="Historial de transacciones" />
+      <Button fx:id="btnStats" layoutX="664.0" layoutY="16.0" mnemonicParsing="false" onAction="#generarStats" text="Estadisticas" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controlador.HistorialController">
+   <children>
+      <TableView fx:id="tblHistorial" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colProd" prefWidth="75.0" text="PRODUCTO" />
+          <TableColumn fx:id="colAcciones" prefWidth="75.0" text="ACCIONES" />
+            <TableColumn fx:id="colPrecio" prefWidth="75.0" text="PRECIO" />
+            <TableColumn fx:id="colTimestamp" prefWidth="75.0" text="TIMESTAMP" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

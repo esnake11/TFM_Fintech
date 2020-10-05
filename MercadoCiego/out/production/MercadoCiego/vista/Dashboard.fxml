@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.DashboardController">
+   <children>
+      <TextField fx:id="txtCompraProd" layoutX="188.0" layoutY="185.0" />
+      <TextField fx:id="txtCompraAcciones" layoutX="188.0" layoutY="251.0" />
+      <TextField fx:id="txtCompraPrecio" layoutX="188.0" layoutY="324.0" />
+      <Label layoutX="77.0" layoutY="190.0" text="PRODUCTO" />
+      <Label layoutX="77.0" layoutY="256.0" text="ACCIONES" />
+      <Label layoutX="77.0" layoutY="324.0" text="PRECIO" />
+      <Button fx:id="btnCompra" layoutX="188.0" layoutY="399.0" mnemonicParsing="false" onAction="#ordenarCompraPressed" prefHeight="31.0" prefWidth="187.0" text="Ordenar compra" />
+      <Label layoutX="479.0" layoutY="324.0" text="PRECIO" />
+      <Label layoutX="479.0" layoutY="256.0" text="ACCIONES" />
+      <Label layoutX="479.0" layoutY="190.0" text="PRODUCTO" />
+      <TextField fx:id="txtVentaPrecio" layoutX="590.0" layoutY="324.0" />
+      <TextField fx:id="txtVentaAcciones" layoutX="590.0" layoutY="251.0" />
+      <TextField fx:id="txtVentaProd" layoutX="590.0" layoutY="185.0" />
+      <Button fx:id="btnVenta" layoutX="590.0" layoutY="399.0" mnemonicParsing="false" onAction="#ordenarVentaPressed" prefHeight="31.0" prefWidth="187.0" text="Ordenar venta" />
+      <Label layoutX="191.0" layoutY="55.0" text="Panel de operaciones">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
